@@ -3,4 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
+module.exports = {
+  distDir: 'src',
+ 
+} 
 module.exports = nextConfig
