@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(../../assets/images/fundo-login-2.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+

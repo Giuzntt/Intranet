@@ -1,13 +1,15 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
 
-const Home: NextPage = () => {
+import Link from 'next/link'
+
+const HomePage: NextPage = () => {
   return (
-    <>
-      <h1>Teste</h1>
-    </>
+   <>
+   <Link href='/Login'>
+    <a >Ir para a Login</a>
+   </Link>
+   </>
   )
 }
 
-export default Home
+export default HomePage
