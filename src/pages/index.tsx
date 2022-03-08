@@ -1,15 +1,26 @@
-import type { NextPage } from 'next'
+import { NextPage } from "next"
+import { Body,    CardLogin, Input, PanelColor } from "./style"
+import TextField from '@mui/material/TextField'
+import { useState } from "react"
+import imagem from '../assets/images/fundo-login-2.svg'
 
-import Link from 'next/link'
 
-const HomePage: NextPage = () => {
-  return (
-   <>
-   <Link href='/Login'>
-    <a >Ir para a Login</a>
-   </Link>
-   </>
-  )
+
+
+const HomePage: NextPage = () =>{
+    const [login, setLogin] = useState('')
+
+    return (
+        
+        <Body>
+            <PanelColor/>
+            <CardLogin>
+                <Input type={'text'} ></Input>
+            </CardLogin>
+        </Body>
+    )
+
+
 }
 
 export default HomePage
