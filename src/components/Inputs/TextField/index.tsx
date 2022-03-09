@@ -1,6 +1,0 @@
-
-
-
-interface InterfaceTextField{
-    id: string
-}

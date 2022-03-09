@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const  Body = styled.body`
-    background-image: url('https://www.globalfocusmagazine.com/wp-content/uploads/2020/02/Engaging_with_technology-scaled.jpg');
+    background-image: url('');
     background-size: cover ;
     background-color: red;
     background-repeat:no-repeat ;
@@ -34,7 +34,7 @@ transform: rotate(10deg);
 `
 
 
-export const Input = styled.input`
+export const ContainerLogin = styled.div`
 position: relative;
 transform: rotate(-10deg);
  margin: 450px;

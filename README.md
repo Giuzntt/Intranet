@@ -8,14 +8,14 @@ Objetivo criar uma plataforma de atendimento de chamados de uma empressa fictici
 [] Criar página com  Lista de Chamados
 ...
 ### SubTasks Página de Login
-[] Criar  Carrosel das Imagens
-[x] Criar e tipar TextFields
-[] Estilizar espaçamentos do projeto
 [] Decidir o style component ou Padronizar para o MUI
+[] Criar  Carrosel das Imagens
+[] Estilizar espaçamentos do projeto
 [] Responsividade
-[x] Criar estilos de fundo  e background
 [] Criar o botão de Autenticação pelo Google, Microsoft, Linkedin
 [] Integrar o projeto com a firebase
+[x] Criar estilos de fundo  e background
+[x] Criar e tipar TextFields
 
 ## Tasks
 [] Criar uma rota para as páginas, navegação
