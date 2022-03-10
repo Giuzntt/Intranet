@@ -20,15 +20,24 @@ const HomePage: NextPage = () =>{
                 <Box>
                  <ContainerImagem>
                                 <Gradiente>
-                                    <Typography variant="h1" color="white" textAlign={'center'}>
-                                        Olá mundo!   
+                                    <Typography variant="h5" color="white" textAlign={'center'}>
+                                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repellat corrupti! Provident perferendis explicabo molestias a. Reiciendis facere, cupiditate nihil nostrum iusto libero dolorem natus illum, et dicta incidunt consequatur? 
                                     </Typography>
                                 </Gradiente>
                     </ContainerImagem>  
                 </Box>
         <Box 
         display={'block'} 
-        sx={{margin:'auto'}}
+        sx={{
+            margin:'auto',
+            padding:'45px',
+            borderRadius: '10px',
+            backgroundColor:'white',
+            boxShadow:'0px 4px 4px 2px rgba(0, 0, 0, 0.2);'
+
+            
+    }}
+
 
         >
                  <ComponentLogin/>    
