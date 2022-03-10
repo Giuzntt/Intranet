@@ -1,29 +1,34 @@
-import { Facebook, Google, LinkedIn } from "@mui/icons-material"
-import { Box, TextField, Button, Fab } from "@mui/material"
-import Image from "next/image"
-import  teste from "../../assets/images/teste.png"
+import {  Google, LinkedIn, Twitter } from "@mui/icons-material"
+import { Box, TextField, Button, Fab, Typography, ThemeProvider } from "@mui/material"
+import { BoxImagem } from "./styles"
 
 
 const  ComponentLogin = () =>{
     return (  
       <>
-            <Image src={teste} layout={'responsive'} />
+          <BoxImagem>
+            <img src="assets/images/suporte-online.png" width={128} height={128}  />
+          </BoxImagem>
           <Box 
             display={'grid'} 
             sx={{
               width: 300,
-              height: 200
+              height: 200,
             }}
             >
-            <TextField
-              id="login"
-              label="Login"
-            />
-            <TextField
-              id="login"
-              label="Senha"
-            />
-            <Button variant="outlined" >
+           <TextField
+             id=""
+             label="Login"
+             variant="outlined"
+             color="primary"
+           />
+           <TextField
+             id=""
+             label="Senha"
+             variant="outlined"
+             color="primary"
+           />
+            <Button variant="contained"  sx={{fontWeight:'bold'}}>
               Entrar
             </Button>
             
@@ -36,15 +41,16 @@ const  ComponentLogin = () =>{
              width: 300,
              justifyContent:'space-between'
           }}>
-              <Fab color="default" >
-              <Google/>
+            <Fab color="info" aria-label="add">
+              <Twitter/>
             </Fab>
-            <Fab color="default">
-              <Facebook/>
+            <Fab color="error" aria-label="add">
+              <Google />
             </Fab>
-            <Fab color="default">
-              <LinkedIn/>
+            <Fab color={'primary'} aria-label="add">
+              <LinkedIn />
             </Fab>
+           
             </Box>
           </>
        
