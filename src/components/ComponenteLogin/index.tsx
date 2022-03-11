@@ -7,6 +7,7 @@ const  ComponentLogin = () =>{
     return (  
       <>
           <BoxImagem>
+           
             <img src="assets/images/suporte-online.png" width={128} height={128}  />
           </BoxImagem>
           <Box 
@@ -27,6 +28,7 @@ const  ComponentLogin = () =>{
              label="Senha"
              variant="outlined"
              color="primary"
+             type={'password'}
            />
             <Button variant="contained"  sx={{fontWeight:'bold'}}>
               Entrar

@@ -8,23 +8,37 @@ export const Panel = styled.div`
 `
 
 export  const Gradiente = styled.div`
- width:  911px;
- height: 100vh;
- background: linear-gradient(116.56deg, #89F7FE -0.08%, rgba(102, 166, 255, 0.24) 99.47%);
- z-index: 2;
+display: grid;
+position: relative;
+  width:  1300px;
+   height: 100vh;
+ border-radius:  0% 100% 0% 39% / 0% 100% 0% 0% ;
+ background-image: linear-gradient(180deg, rgba(0, 198, 251, 0.37) 0%, rgba(0, 91, 234, 0.88) 100%);
 `
 
 
 export const ContainerImagem = styled.div`
-    width:  911px;
+    border-radius:  0% 100% 0% 39% / 0% 100% 0% 0% ;
+    width:  1300px;
     height: 100vh;
-    background-image: url('assets/images/fundo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     
     
 
 `
+
+export const PNGImage = styled.div`
+    position: relative;
+    left: 20px;
+    bottom: 5px;
+
+`
+export const tituloLogin = styled.h1`
+    font-family: Poppins;
+`
+
+
 
 
 

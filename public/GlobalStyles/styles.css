@@ -1,16 +1,19 @@
 body{
    width: 100%;
    min-height: 100vh;
-background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-
+   background: #f1f1f1;
+   background-blend-mode: lighten;
+   
+;
+  
 
 } 
-/* @font-face {
+@font-face {
    font-family: 'Poppins';
    src: url('../assets/fonts/Poppins-Regular.ttf');
    font-style: normal;
    font-weight: 200;
-} */
+}
 
 
 
