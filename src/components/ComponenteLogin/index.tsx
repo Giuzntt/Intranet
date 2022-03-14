@@ -1,6 +1,7 @@
-import {  Google, LinkedIn, Twitter } from "@mui/icons-material"
+import {  GitHub, Google, LinkedIn, Twitter } from "@mui/icons-material"
 import { Box, TextField, Button, Fab, Typography, ThemeProvider } from "@mui/material"
 import { BoxImagem } from "./styles"
+import Link from "next/link"
 
 
 const  ComponentLogin = () =>{
@@ -30,9 +31,11 @@ const  ComponentLogin = () =>{
              color="primary"
              type={'password'}
            />
+           <Link  href={'../'}>
             <Button variant="contained"  sx={{fontWeight:'bold'}}>
               Entrar
             </Button>
+           </Link>
             
             
 
@@ -43,8 +46,8 @@ const  ComponentLogin = () =>{
              width: 300,
              justifyContent:'space-between'
           }}>
-            <Fab color="info" aria-label="add">
-              <Twitter/>
+            <Fab color="default" aria-label="add">
+              <GitHub/>
             </Fab>
             <Fab color="error" aria-label="add">
               <Google />

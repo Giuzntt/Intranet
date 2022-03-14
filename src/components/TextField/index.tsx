@@ -4,23 +4,29 @@ import { MyTextField } from './style'
 
 interface InterfaceTextField {
     type?: string,
-    placeholder: string
+    placeholder: string,
+    defaultValue: any,
+    disabled: boolean,
+    error: boolean,
 
 }
 const  TextFieldComponent:FC<InterfaceTextField> = ({
         type='text',
-        placeholder
+        placeholder,
+        defaultValue,
+        disabled,
+        error
  }) =>{
 
     return (
-        <>
+        
             <MyTextField 
              variant='outlined'
+             color='primary'
              label={placeholder}
-              type={type}
+             type={type}
               />
-        </>
-
+       
     )
 }
 
