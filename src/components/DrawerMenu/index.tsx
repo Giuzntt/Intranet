@@ -20,6 +20,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import { AppBar, Drawer, DrawerHeader } from './styles';
 import { AddAlarm } from '@mui/icons-material';
 import { IconProps } from '@mui/material';
+import Link from 'next/link';
 
 
 interface miniDrawerProps {
@@ -80,9 +81,30 @@ const MiniDrawer: React.FC<miniDrawerProps> = (
         <Divider />
         <List>
             {
-                // listItem.map(({icons, label, route})=>(
+                listItem.map(({icons, label, route})=>(
+                    <Link href={route} key={label}>
+                        <ListItemButton
+                            key={label}
+                            sx={{
+                                minHeight: 48,
+                                justifyContent: open ? 'initial' : 'center',
+                                px: 2.5,
+                            }}
+                            >
+                            <ListItemIcon
+                                sx={{
+                                minWidth: 0,
+                                mr: open ? 3 : 'auto',
+                                justifyContent: 'center',
+                                }}
+                            >
+                                {icons}
+                            </ListItemIcon>
+                            <ListItemText primary={label} sx={{ opacity: open ? 1 : 0 }} />
+                         </ListItemButton>
 
-                // ))
+                    </Link>
+                ))
             }
           {['Home Page', 'Chamados', 'Cadastros', 'Estoque'].map((text, index) => (
             <ListItemButton
