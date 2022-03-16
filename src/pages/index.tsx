@@ -4,6 +4,7 @@ import Link from "next/link"
 import { ContainerNav, ListaNav, NavigationBar,ItemListaNav } from "./style"
 import { Button, TextField, Typography } from '@mui/material'
 import MiniDrawer from "../components/DrawerMenu"
+import { stageSideBar } from "./objects-sidebar"
 
 
 
@@ -15,9 +16,10 @@ const HomePage: NextPage = () =>{
         <>
      
         <MiniDrawer appendChild={
-
                <Typography variant="h1" color="initial">teste</Typography>
-        }/>
+        }
+        itemSideBar={stageSideBar}
+        />
         
         
         

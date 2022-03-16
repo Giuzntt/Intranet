@@ -15,29 +15,20 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import { AppBar, Drawer, DrawerHeader } from './styles';
-import { AddAlarm } from '@mui/icons-material';
-import { IconProps } from '@mui/material';
+import { AbcSharp, AddAlarm } from '@mui/icons-material';
 import Link from 'next/link';
+import { miniDrawerProps } from './types';
+import { Button } from '@mui/material'
 
 
-interface miniDrawerProps {
-    appendChild: JSX.Element;
 
-    listItem:{
-        icons:JSX.Element,
-        label: string
-        route: string
-    }[]
-}
 
 const MiniDrawer: React.FC<miniDrawerProps> = ( 
     {
         appendChild,
-        listItem
-    
+        itemSideBar
     })=> {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -80,9 +71,11 @@ const MiniDrawer: React.FC<miniDrawerProps> = (
         </DrawerHeader>
         <Divider />
         <List>
-            {
-                listItem.map(({icons, label, route})=>(
-                    <Link href={route} key={label}>
+          {
+            itemSideBar.map(({id, route, label})=>{
+              return (
+             
+                <Link href={route} key={id}>
                         <ListItemButton
                             key={label}
                             sx={{
@@ -98,35 +91,17 @@ const MiniDrawer: React.FC<miniDrawerProps> = (
                                 justifyContent: 'center',
                                 }}
                             >
-                                {icons}
-                            </ListItemIcon>
+                               <AbcSharp/>
+                              </ListItemIcon>
                             <ListItemText primary={label} sx={{ opacity: open ? 1 : 0 }} />
                          </ListItemButton>
-
                     </Link>
-                ))
-            }
-          {['Home Page', 'Chamados', 'Cadastros', 'Estoque'].map((text, index) => (
-            <ListItemButton
-              key={text}
-              sx={{
-                minHeight: 48,
-                justifyContent: open ? 'initial' : 'center',
-                px: 2.5,
-              }}
-            >
-              <ListItemIcon
-                sx={{
-                  minWidth: 0,
-                  mr: open ? 3 : 'auto',
-                  justifyContent: 'center',
-                }}
-              >
-                {index % 2 === 0 ? <AddAlarm /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
-            </ListItemButton>
-          ))}
+              
+              )
+            })
+          }
+                    
+                
         </List>
         <Divider />
        
