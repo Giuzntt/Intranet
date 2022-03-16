@@ -16,7 +16,7 @@ const HomePage: NextPage = () =>{
         <>
      
         <MiniDrawer appendChild={
-               <Typography variant="h1" color="initial">teste</Typography>
+               <Typography variant="h1" color="initial">testando</Typography>
         }
         itemSideBar={stageSideBar}
         />

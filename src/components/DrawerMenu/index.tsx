@@ -72,10 +72,10 @@ const MiniDrawer: React.FC<miniDrawerProps> = (
         <Divider />
         <List>
           {
-            itemSideBar.map(({id, route, label})=>{
+            itemSideBar.map(({id, route, label, icons: Icons})=>{
               return (
              
-                <Link href={route} key={id}>
+                <Link href={route} key={id} passHref>
                         <ListItemButton
                             key={label}
                             sx={{
@@ -91,7 +91,7 @@ const MiniDrawer: React.FC<miniDrawerProps> = (
                                 justifyContent: 'center',
                                 }}
                             >
-                               <AbcSharp/>
+                               <Icons/>
                               </ListItemIcon>
                             <ListItemText primary={label} sx={{ opacity: open ? 1 : 0 }} />
                          </ListItemButton>

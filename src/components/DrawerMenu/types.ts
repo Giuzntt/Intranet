@@ -1,13 +1,15 @@
-import { SvgIconProps } from "@mui/material";
+import { SvgIconComponent } from "@mui/icons-material";
+
+import React from "react";
 
 export interface miniDrawerProps {
     appendChild?: JSX.Element;
-    itemSideBar:ISideBar[]
+    itemSideBar:ISideBar[];
 }
  export interface ISideBar {
-        id: number,
-        //  icons?:JSX.Element
-        label: string
-        route: string
-    
+        id: number;
+        icons:SvgIconComponent;
+        label: string;
+        route: string;
+   
 }
