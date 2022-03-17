@@ -5,7 +5,7 @@ export const stageSideBar: ISideBar[] = [
         {
             id:1,
             icons: Icon.Home,
-            route: '../Home',
+            route: '../',
             label:'Home Page'
         },
         {
