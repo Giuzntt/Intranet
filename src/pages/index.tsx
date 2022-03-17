@@ -2,6 +2,10 @@ import { Logout, Menu } from "@mui/icons-material"
 import { NextPage } from "next"
 import Link from "next/link"
 import { ContainerNav, ListaNav, NavigationBar,ItemListaNav } from "./style"
+import { Button, TextField, Typography } from '@mui/material'
+import MiniDrawer from "../components/DrawerMenu"
+import { stageSideBar } from "./objects-sidebar"
+
 
 
 
@@ -9,22 +13,17 @@ const HomePage: NextPage = () =>{
    
 
     return (
-
         <>
-        <NavigationBar>
-            <ContainerNav>
-                <ListaNav>
-                    <ItemListaNav><Menu/></ItemListaNav>
-                    <ItemListaNav><Logout/></ItemListaNav>
-                </ListaNav>
-
-            </ContainerNav>
-        </NavigationBar>
-        <Link href={'./Login'}>
-            <a>teste</a>
-        </Link>
-        </>
+     
+        <MiniDrawer appendChild={
+               <Typography variant="h1" color="initial">testando</Typography>
+        }
+        itemSideBar={stageSideBar}
+        />
         
+        
+        
+       </>
     )
 
 

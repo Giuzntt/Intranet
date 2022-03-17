@@ -7,7 +7,13 @@ module.exports = {
   distDir: 'src',
  
 } 
-module.exports = nextConfig
+module.exports = nextConfig,
+
+{
+  "presets": ["next/babel"],
+    "plugins": [["styled-components", { "ssr": true }]]
+}
+
 
 
 // const withTM = require('next-transpile-modules')([
