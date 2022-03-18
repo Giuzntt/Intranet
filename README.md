@@ -1,6 +1,6 @@
 # Projeto  Intranet
 
-Objetivo criar uma plataforma de atendimento de chamados de uma empressa ficticia.
+Objetivo criar uma plataforma de atendimento de chamados de uma empresa ficticia.
 
 ## Páginas
 [x] Criar página de Login
