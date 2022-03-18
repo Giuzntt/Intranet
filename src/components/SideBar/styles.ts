@@ -4,7 +4,7 @@ import { styled, useTheme, Theme, CSSObject } from '@mui/material/styles';
 import { Box } from '@mui/material';
 
 
-export const drawerWidth = 240;
+export const drawerWidth = 200;
 
 export const openedMixin = (theme: Theme): CSSObject => ({
   width: drawerWidth,

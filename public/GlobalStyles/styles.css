@@ -13,7 +13,13 @@ body{
    src: url('../assets/fonts/Poppins-Regular.ttf');
    font-style: normal;
    font-weight: 200;
-}
+} 
+@font-face {
+   font-family: 'Quicksand', sans-serif;
+   src: url('../assets/fonts/Quicksand-VariableFont_wght.ttf');
+   font-style: normal;
+   font-weight: 200;
+} 
 
 
 

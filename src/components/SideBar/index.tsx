@@ -13,7 +13,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import { AppBar, BoxConteudo, Drawer, DrawerHeader } from './styles';
+import { AppBar, Drawer, DrawerHeader } from './styles';
 import {  Logout, Close } from '@mui/icons-material';
 import Link from 'next/link';
 import { miniDrawerProps } from './types';
@@ -35,7 +35,7 @@ const SideBar: React.FC<miniDrawerProps> = (
   };
 
   return (
-    <Box sx={{}}>
+    <Box sx={{display:'flex'}}>
       <CssBaseline />
       <AppBar position="fixed" open={open} sx={{backgroundColor:'white'}}>
         <Toolbar sx={{
@@ -119,11 +119,11 @@ const SideBar: React.FC<miniDrawerProps> = (
         
        
       </Drawer>
-      <BoxConteudo >
-       
-          {children}
+      <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+
+              {children}
           
-        </BoxConteudo>
+        </Box>
         
     </Box>    
   );
