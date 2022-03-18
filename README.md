@@ -1,6 +1,9 @@
 # Projeto  Intranet
 
 Objetivo criar uma plataforma de atendimento de chamados de uma empresa ficticia.
+## UI: https://www.figma.com/file/4RtptMHiRvsnrdgwm9c9DA/Intranet
+## Requisitos: https://www.notion.so/PROJETO-SUSTENTA-O-82b8204695274d5db042a7f57389c174
+## Arquitetura: https://miro.com/welcomeonboard/bjFVVFFjbUJINTdMWlNOd0ZXYkdwWkd1eGhRamR5VHVKVFRHWnNjRGNXMHc5bEtvRHZSSzJVQXpMbEhRdnNKUHwzNDU4NzY0NTE4Mzc2ODA3NzE3?invite_link_id=201263678296
 
 ## Páginas
 [x] Criar página de Login
