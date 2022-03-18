@@ -10,25 +10,18 @@ import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import MailIcon from '@mui/icons-material/Mail';
-import { AppBar, Drawer, DrawerHeader } from './styles';
+import { AppBar, BoxConteudo, Drawer, DrawerHeader } from './styles';
 import {  Logout, Close } from '@mui/icons-material';
 import Link from 'next/link';
 import { miniDrawerProps } from './types';
-import { Button } from '@mui/material'
 
-
-
-
-const MiniDrawer: React.FC<miniDrawerProps> = ( 
+const SideBar: React.FC<miniDrawerProps> = ( 
     {
-        appendChild,
-        itemSideBar
+        itemSideBar,
+        children
     })=> {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -42,7 +35,7 @@ const MiniDrawer: React.FC<miniDrawerProps> = (
   };
 
   return (
-    <Box sx={{display:'flex'}}>
+    <Box sx={{}}>
       <CssBaseline />
       <AppBar position="fixed" open={open} sx={{backgroundColor:'white'}}>
         <Toolbar sx={{
@@ -126,15 +119,14 @@ const MiniDrawer: React.FC<miniDrawerProps> = (
         
        
       </Drawer>
-      <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-
-      {
-          appendChild&&appendChild
-        }
-        </Box>
+      <BoxConteudo >
+       
+          {children}
+          
+        </BoxConteudo>
         
     </Box>    
   );
 }
 
-export default MiniDrawer
+export default SideBar

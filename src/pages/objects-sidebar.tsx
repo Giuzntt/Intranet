@@ -1,5 +1,6 @@
 import * as Icon from "@mui/icons-material";
-import {  ISideBar } from "../components/DrawerMenu/types";
+
+import {   ISideBar } from "../components/SideBar/types";
 
 export const stageSideBar: ISideBar[] = [
         {
@@ -11,7 +12,7 @@ export const stageSideBar: ISideBar[] = [
         {
             id:2,
             icons: Icon.AddAlert,
-            route: '../Login',
+            route: '../TestePage',
             label:'Chamados'
         },
         {
@@ -34,3 +35,4 @@ export const stageSideBar: ISideBar[] = [
         },
         
 ]
+

@@ -1,6 +1,7 @@
 import MuiDrawer from '@mui/material/Drawer';
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
 import { styled, useTheme, Theme, CSSObject } from '@mui/material/styles';
+import { Box } from '@mui/material';
 
 
 export const drawerWidth = 240;
@@ -74,3 +75,8 @@ export const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 
     }),
   }),
 );
+
+export const BoxConteudo = styled(Box)`
+  margin:60px;
+
+`
