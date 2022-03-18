@@ -18,6 +18,6 @@ Objetivo criar uma plataforma de atendimento de chamados de uma empressa fictici
 [x] Criar e tipar TextFields
 
 ## Tasks
-[] Criar uma rota para as páginas, navegação
+[x] Criar uma rota para as páginas, navegação
 [] Começar a criar a página de Login -TextFields, esquematizar os styledcomponents
 [x] Estruturar o código do projeto
