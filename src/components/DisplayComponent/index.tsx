@@ -1,24 +1,26 @@
-import { Check, Close, Timelapse } from "@mui/icons-material"
+import { AddAlarm, Check, Close, Timelapse } from "@mui/icons-material"
 import { Box } from "@mui/material"
-import { margin } from "@mui/system"
-import { BoxDisplay, TituloCaixa, TextoDisplay, BoxDisplay2, BoxDisplay3 } from "./styles"
+
+import { BoxDisplay, TituloCaixa, TextoDisplay } from "./styles"
+import { IDisplayComponent } from "./types";
 
 
 
-interface IDisplayComponent{
+const DisplayComponent = ({
+    displayComponent
+}: IDisplayComponent) =>{
 
-}
-
-const  DisplayComponent = ()  => {
-
-    return (
-       <Box display={'flex'} sx={{justifyContent: 'space-between'}}>
-        <BoxDisplay>
+    return(
+   <>{
+        displayComponent.map(({
+            title, icons:Icons, numeroChamados, colorDiferente 
+        }, index)=>(
+            <Box display={'flex'} key={index} sx={{justifyContent: 'space-between'}}>
+                <BoxDisplay cor={colorDiferente}>
                 <TituloCaixa variant="h5">
-
-                Não Solucionado
+                    {title}
                 </TituloCaixa>
-
+                
                 <Box sx={{
                     margin: '5px',
                     display: 'flex',
@@ -27,91 +29,29 @@ const  DisplayComponent = ()  => {
                     bottom: '0'
                 }}>
                 <TituloCaixa variant="h5">
-                0 
+                {numeroChamados}
                 </TituloCaixa>
                 <TextoDisplay >
                  Chamados
                 </TextoDisplay>
                 
-                <Close sx={{
+                <Icons sx={{
                     color: '#EA8080',
-                    fontSize: "135px",
+                    fontSize: "120px",
                     position: 'relative',
                     left: '0px'
                     
                 }}
                 />
                 </Box>
+                </BoxDisplay>
+                </Box> 
+        )
+        )
+   }</>
 
-
-        </BoxDisplay>
-        <BoxDisplay2>
-                <TituloCaixa variant="h5">
-
-                Em andamento
-                </TituloCaixa>
-
-                <Box sx={{
-                    margin: '5px',
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    bottom: '0'
-                }}>
-                <TituloCaixa variant="h5">
-                0 
-                </TituloCaixa>
-                <TextoDisplay >
-                 Chamados
-                </TextoDisplay>
-                
-                <Timelapse sx={{
-                    color: '#FFCC80',
-                    fontSize: "115px",
-                    position: 'relative',
-                    left: '0px'
-                    
-                }}
-                />
-                </Box>
-
-
-        </BoxDisplay2>
-        <BoxDisplay3>
-                <TituloCaixa variant="h5" sx={{margin:'10px 0px '}}>
-
-                Solucionado
-                </TituloCaixa>
-
-                <Box sx={{
-                    margin: '5px',
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    bottom: '0'
-                }}>
-                <TituloCaixa variant="h5">
-                0 
-                </TituloCaixa>
-                <TextoDisplay >
-                 Chamados
-                </TextoDisplay>
-                
-                <Check sx={{
-                    color: '#80DFD2',
-                    fontSize: "115px",
-                    position: 'relative',
-                    left: '0px'
-                    
-                }}
-                />
-                </Box>
-
-
-        </BoxDisplay3>
-       </Box> 
-
-    )
+        )
 }
+
 
 export default DisplayComponent
