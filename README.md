@@ -10,6 +10,11 @@ Objetivo criar uma plataforma de atendimento de chamados de uma empresa ficticia
 [] Criar página Home
 [] Criar página com  Lista de Chamados
 ...
+### SubTasks Página de Dashboard
+[] Começar a tipar o Display Component
+[] Criar componente de Carrosel
+[] Tipar Componente de Carrosel
+[] Criar uma API mockada para a Dashboard
 ### SubTasks Página de Login
 [] Decidir o style component ou Padronizar para o MUI
 [] Criar  Carrosel das Imagens

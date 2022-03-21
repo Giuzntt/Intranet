@@ -9,4 +9,5 @@ export interface ItemDisplayComponent {
     numeroChamados: number;
     icons: SvgIconComponent;
     colorDiferente: string;
+    colorIcon: string;
 }

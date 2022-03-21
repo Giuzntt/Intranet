@@ -1,7 +1,7 @@
 import { AddAlarm, Check, Close, Timelapse } from "@mui/icons-material"
 import { Box } from "@mui/material"
 
-import { BoxDisplay, TituloCaixa, TextoDisplay } from "./styles"
+import { BoxDisplay, TituloCaixa, TextoDisplay, ContainerDisplay } from "./styles"
 import { IDisplayComponent } from "./types";
 
 
@@ -11,12 +11,13 @@ const DisplayComponent = ({
 }: IDisplayComponent) =>{
 
     return(
-   <>{
+   <><ContainerDisplay  >
+   {
         displayComponent.map(({
-            title, icons:Icons, numeroChamados, colorDiferente 
+            title, icons:Icons, numeroChamados, colorDiferente, colorIcon 
         }, index)=>(
-            <Box display={'flex'} key={index} sx={{justifyContent: 'space-between'}}>
-                <BoxDisplay cor={colorDiferente}>
+            
+                <BoxDisplay key={index} cor={colorDiferente}>
                 <TituloCaixa variant="h5">
                     {title}
                 </TituloCaixa>
@@ -36,7 +37,7 @@ const DisplayComponent = ({
                 </TextoDisplay>
                 
                 <Icons sx={{
-                    color: '#EA8080',
+                    color: '#FFF',
                     fontSize: "120px",
                     position: 'relative',
                     left: '0px'
@@ -45,10 +46,12 @@ const DisplayComponent = ({
                 />
                 </Box>
                 </BoxDisplay>
-                </Box> 
-        )
-        )
-   }</>
+                
+                )
+                )
+            }
+            </ContainerDisplay>
+            </>
 
         )
 }
