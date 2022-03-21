@@ -4,6 +4,19 @@ const nextConfig = {
 }
 
 module.exports = {
+   trailingSlash:true,
+  async redirects() {
+    return [
+      {
+        source: '/teste',
+        destination: '/',
+        permanent: true,
+      },
+    ]
+  },
+}
+
+module.exports = {
   distDir: 'src',
  
 } 
