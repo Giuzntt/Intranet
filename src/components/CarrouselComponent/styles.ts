@@ -30,6 +30,7 @@ export const ImagemSlide = styled(Box)`
 export const TextoSlide = styled(Typography)`
    font-family: 'Quicksand';
    font-size: 20px;
+  text-justify: inter-word;
     
 
 `

@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import SideBar from ".";
-import {  stageSideBar } from "../../pages/objects-sidebar";
+import {  stageSideBar } from "./objects-sidebar";
 
 
 interface ILayoutProps {

@@ -1,7 +1,7 @@
 import * as Icon from "@mui/icons-material";
 
 
-import {   ISideBar } from "../components/SideBar/types";
+import {   ISideBar } from "./types";
 
 export const stageSideBar: ISideBar[] = [
         {

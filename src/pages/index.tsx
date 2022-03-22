@@ -3,7 +3,7 @@ import { Typography, Button } from '@mui/material'
 import CarrouselComponent from '../components/CarrouselComponent'
 import DisplayComponent from '../components/DisplayComponent'
 import { stageDisplayComponent } from '../components/DisplayComponent/display-objects'
-import { BoxConteudo } from './style'
+import { BoxConteudo } from '../resources/style'
 
 
 

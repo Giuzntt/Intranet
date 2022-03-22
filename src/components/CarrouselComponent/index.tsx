@@ -17,11 +17,7 @@ const CarrouselComponent = () =>{
     return (
         <>
            <ContainerCarrousel>
-          <Swiper
-         style={{
-           "--swiper-navigation-color": "#fff",
-          "--swiper-pagination-color": "#fff",
-         }} 
+        <Swiper
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
