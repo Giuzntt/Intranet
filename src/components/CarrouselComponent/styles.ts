@@ -11,7 +11,7 @@ export const ContainerCarrousel = styled(Box)`
 
 `
 export const ContainerSlide = styled(Box)`
-    width: 70%;
+    width: 80%;
     height: 100%;
     display: flex;
     justify-content: space-between;

@@ -1,8 +1,7 @@
-import { Title } from '@mui/icons-material'
-import { Typography, Button } from '@mui/material'
+import { Typography } from '@mui/material'
 import CarrouselComponent from '../components/CarrouselComponent'
 import DisplayComponent from '../components/DisplayComponent'
-import { stageDisplayComponent } from '../components/DisplayComponent/display-objects'
+import { stageDisplayComponent, stagePanelComponent } from '../components/DisplayComponent/display-objects'
 import { BoxConteudo } from '../resources/style'
 
 
@@ -20,7 +19,10 @@ const  Home  = () =>{
         Chamados Recentes em Aberto
         </Typography>
         <CarrouselComponent/>
-
+       <Typography variant="h3" color="initial" sx={{fontFamily:'Quicksand, sans-serif'}}>
+        Termomêtro
+        </Typography>
+        <DisplayComponent displayComponent={stagePanelComponent}/>
     </BoxConteudo>
 
     )

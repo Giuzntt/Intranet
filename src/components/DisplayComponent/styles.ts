@@ -9,7 +9,7 @@ export const ContainerDisplay  = styled(Box)`
     width:  100%;
     display: flex;
     justify-content: space-between;
-    height: 450px;
+    height: 300px;
 
 `
 export const BoxDisplay  = styled(Box)<IBoxDisplayProps> `

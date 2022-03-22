@@ -7,14 +7,16 @@ import { IDisplayComponent } from "./types";
 
 
 const DisplayComponent = ({
-    displayComponent
+    displayComponent,
+   
+    
 }: IDisplayComponent) =>{
 
     return(
    <><ContainerDisplay  >
    {
         displayComponent.map(({
-            title, icons:Icons, numeroChamados, colorDiferente, colorIcon 
+            title, icons:Icons, numeroChamados,nomeItem, colorDiferente, colorIcon 
         }, index)=>(
             
                 <BoxDisplay key={index} cor={colorDiferente}>
@@ -33,7 +35,7 @@ const DisplayComponent = ({
                 {numeroChamados}
                 </TituloCaixa>
                 <TextoDisplay >
-                 Chamados
+                 {nomeItem}
                 </TextoDisplay>
                 
                 <Icons sx={{

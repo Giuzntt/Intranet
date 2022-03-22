@@ -15,7 +15,8 @@ import { Box } from "@mui/material";
 
 const CarrouselComponent = () =>{
     return (
-        <>
+        <Box sx={{height: '200px'}}>
+
            <ContainerCarrousel>
         <Swiper
         spaceBetween={30}
@@ -64,7 +65,7 @@ const CarrouselComponent = () =>{
         </SwiperSlide>
       </Swiper>
         </ContainerCarrousel>
-        </>
+        </Box>
     )
 
 }
