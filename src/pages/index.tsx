@@ -1,8 +1,9 @@
 import { Typography } from '@mui/material'
+import { BoxConteudo } from '../assets/HomePageStyle/styleHomePage'
 import CarrouselComponent from '../components/CarrouselComponent'
 import DisplayComponent from '../components/DisplayComponent'
 import { stageDisplayComponent, stagePanelComponent } from '../components/DisplayComponent/display-objects'
-import { BoxConteudo } from '../resources/style'
+
 
 
 
