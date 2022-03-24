@@ -7,12 +7,12 @@ Objetivo criar uma plataforma de atendimento de chamados de uma empresa ficticia
 
 ## Páginas
 [x] Criar página de Login
-[] Criar página Home
+[x] Criar página Home
 [] Criar página com  Lista de Chamado
 ...
 ### SubTasks Página de Dashboard
-[] Começar a tipar o Display Component
-[] Criar componente de Carrosel
+[x] Começar a tipar o Display Component
+[x] Criar componente de Carrosel
 [] Tipar Componente de Carrosel
 [] Criar uma API mockada para a Dashboard
 ### SubTasks Página de Login
