@@ -1,8 +1,8 @@
 import { SvgIconComponent } from "@mui/icons-material";
 
 export interface IDisplayComponent{
-    displayComponent:   ItemDisplayComponent[] | ItemDisplayAvaliation []
-    // panelComponent: ItemDisplayAvaliation[]
+    display:   ItemDisplayComponent[] | ItemDisplayAvaliation[]
+    // panelComponent: 
 }
 
 export interface ItemDisplayComponent {

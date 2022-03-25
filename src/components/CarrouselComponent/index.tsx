@@ -12,7 +12,6 @@ import { Box } from "@mui/material";
 
 
 
-
 const CarrouselComponent = () =>{  
   return (
         <Box sx={{height: '200px'}}>

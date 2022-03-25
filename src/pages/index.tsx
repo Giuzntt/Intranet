@@ -15,7 +15,7 @@ const  Home  = () =>{
       <Typography variant="h3" color="initial" sx={{fontFamily:'Quicksand, sans-serif'}}>
         Dashboard
         </Typography>
-      <DisplayComponent displayComponent={stageDisplayComponent}/>
+      <DisplayComponent display={stageDisplayComponent}/>
        <Typography variant="h3" color="initial" sx={{fontFamily:'Quicksand, sans-serif'}}>
         Chamados Recentes em Aberto
         </Typography>
@@ -23,7 +23,7 @@ const  Home  = () =>{
        <Typography variant="h3" color="initial" sx={{fontFamily:'Quicksand, sans-serif'}}>
         Termomêtro
         </Typography>
-        <DisplayComponent displayComponent={stagePanelComponent}/>
+        <DisplayComponent display={stagePanelComponent}/>
     </BoxConteudo>
 
     )
