@@ -2,10 +2,11 @@ import { SvgIconComponent } from "@mui/icons-material";
 
 export interface IDisplayComponent{
     display:   ItemDisplayComponent[] | ItemDisplayAvaliation[]
-    // panelComponent: 
+   
 }
 
 export interface ItemDisplayComponent {
+    id?: number | string; 
     title: string;
     nomeItem: string,
     numeroChamados?: number
@@ -13,6 +14,26 @@ export interface ItemDisplayComponent {
     colorDiferente: string;
     colorIcon: string;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export interface ItemDisplayAvaliation {
     title: string;

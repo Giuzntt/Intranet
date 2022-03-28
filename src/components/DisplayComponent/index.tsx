@@ -9,30 +9,33 @@ import { BoxDisplay, TituloCaixa, TextoDisplay, ContainerDisplay } from "./style
 import { IDisplayComponent, ItemDisplayComponent } from "./types";
 
 
-const DisplayComponent = ({display}: IDisplayComponent) =>{
-      
-    //tipar estado com a propriedade display
-    const [displayComponent, setDisplayComponent] = useState<ItemDisplayComponent[]>([])
-    
 
-    //dar um get na api da intranet
+const DisplayComponent = ({display}: IDisplayComponent) =>{
+
+    //criar estado taskNotSolved 
+   
+
+
+    const [displayComponent, setDisplayComponent] = useState<ItemDisplayComponent[]>([])
     const getPanel = async () => {
-        const response = await client.get('/intranet')    
-        console.log(response.data)
+        const response = await client.get('/displayComponent')    
+        console.log('API DISPLAY =>',response.data[0])
         setDisplayComponent(response.data)
     }
 
     useEffect(() => {
         getPanel()
-    },[display])
+    },[])
+   
+
 
     return(
             <ContainerDisplay>
                 {
-                     displayComponent.map((item, index) => {
+                     display.map(({icons:Icons, nomeItem, colorDiferente, title}, index) => {
                 return(
-                    <BoxDisplay key={index} cor={item.colorDiferente}>
-                        <TituloCaixa variant="h5">{item.title}</TituloCaixa>
+                    <BoxDisplay key={index} cor={colorDiferente}>
+                        <TituloCaixa variant="h5">{title}</TituloCaixa>
                         <Box sx={{
                     margin: '5px',
                     display: 'flex',
@@ -40,24 +43,39 @@ const DisplayComponent = ({display}: IDisplayComponent) =>{
                     alignItems: 'center',
                     bottom: '0'
                 }}>
-                <TituloCaixa variant="h5">
-                {item.numeroChamados}
-                </TituloCaixa>
-                <TextoDisplay >
-                 {item.nomeItem}
-                </TextoDisplay>
-                {
-                    item.icons
-                }
+                   
+                   {
+                       displayComponent.map(({numeroChamados}, index)=>{
+                           return(
+                            //pegar  o numero de chamados
+                             <TextoDisplay key={index}>{numeroChamados}</TextoDisplay>
+
+                            )
+                       }
+                        
+                       )
+                   }
                 
+                <TextoDisplay >
+                 {nomeItem}
+                </TextoDisplay>
+                    <Icons
+                        sx={{
+                    color: '#FFF',
+                    fontSize: "120px",
+                    position: 'relative',
+                    left: '0px'
+                    
+                }}
+                    />
                 </Box>
                     </BoxDisplay>
-
                 )
             }
-                     )
+        )
+
                 }
-                
+              
             </ContainerDisplay>
         
     )
