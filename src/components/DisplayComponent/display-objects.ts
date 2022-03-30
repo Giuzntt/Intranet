@@ -3,7 +3,7 @@ import * as Icon from "@mui/icons-material";
 
 export const stageDisplayComponent:ItemDisplayComponent[] = [
     {
-        title: 'Não Solucionado',
+        title: 'Em aberto',
         nomeItem: 'Chamados',
         numeroChamados: 0,
         icons: Icon.Close,
