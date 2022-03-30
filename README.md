@@ -13,9 +13,9 @@ Objetivo criar uma plataforma de atendimento de chamados de uma empresa ficticia
 ### SubTasks Página de Dashboard
 [x] Começar a tipar o Display Component
 [x] Criar componente de Carrosel
-[] Tipar Componente de Carrosel
-[] Criar uma API mockada para a Dashboard
-### SubTasks Página de Login
+[X] Tipar Componente de Carrosel
+[X] Criar uma API mockada para a Dashboard
+### SubTasks Página de Login - Integrar Micro Front-End
 [] Decidir o style component ou Padronizar para o MUI
 [] Criar  Carrosel das Imagens
 [] Estilizar espaçamentos do projeto
@@ -30,5 +30,7 @@ Objetivo criar uma plataforma de atendimento de chamados de uma empresa ficticia
 [] Começar a criar a página de Login -TextFields, esquematizar os styledcomponents
 [x] Estruturar o código do projeto
 
+COMANDO PARA SABER QUAIS BRANCHES ESTÃO REMOTAS E QUAIS ESTÃO LOCAIS
+git
 COMANDO PARA ATUALIZAR A  BRANCH LOCAL
 git fetch --prune --all

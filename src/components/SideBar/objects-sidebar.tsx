@@ -12,7 +12,7 @@ export const stageSideBar: ISideBar[] = [
   {
     id: 2,
     icons: Icon.AddAlert,
-    route: "../TestePage",
+    route: "../AlertPage",
     label: "Chamados",
   },
   {
